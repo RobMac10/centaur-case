@@ -356,3 +356,18 @@ body.easy-read .decision-box .close-line{font-family:"EasyRead",Georgia,sans-ser
   .desk-turn{font-size:1.02rem;text-align:left;margin-left:0;margin-right:0}
   .decision-box .case-q{font-size:1.12rem}
 }
+
+/* Opening illustration — not an archival photograph */
+.opener-illustration{margin:0.2rem 0 1.1rem;padding:0;text-align:center}
+.opener-illustration .artefact-zoom{display:inline-block;width:100%;max-width:100%;line-height:0}
+.opener-illustration img{
+  display:block;width:100%;height:auto;max-width:100%;
+  border:1px solid #3a2a1c;box-shadow:2px 3px 0 #c9a96a44;
+}
+.opener-illustration figcaption{
+  font:italic 600 .85rem/1.35 system-ui,sans-serif;
+  color:#6b3a1e;margin:.45rem 0 0;letter-spacing:.02em;
+}
+@media print{
+  .opener-illustration img{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
