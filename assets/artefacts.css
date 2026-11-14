@@ -1,0 +1,187 @@
+@font-face{font-family:"Courier Prime";src:url("fonts/CourierPrime-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Courier Prime";src:url("fonts/CourierPrime-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Special Elite";src:url("fonts/SpecialElite-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Kalam";src:url("fonts/Kalam-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Libre Baskerville";src:url("fonts/LibreBaskerville-VariableFont_wght.ttf") format("truetype");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Libre Baskerville";src:url("fonts/LibreBaskerville-Italic-VariableFont_wght.ttf") format("truetype");font-weight:400 700;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");font-weight:400 900;font-style:normal;font-display:swap}
+
+:root{
+  --ink:#2b221c;
+  --rust:#8b3a1e;
+  --desk:#e4d3b0;
+  --paper:#f3ead4;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body.book-page{
+  width:794px;height:1123px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 20%, #f4ead6 0%, #e4d3b0 70%, #d7c19a 100%);
+  color:var(--ink);
+}
+.book-label{
+  font:italic 600 13px/1.35 "Libre Baskerville",Georgia,serif;
+  color:var(--rust);
+  text-align:center;
+  margin:0;
+  padding:12px 32px 0;
+}
+.book-kicker{
+  font:italic 400 15px/1.4 "Libre Baskerville",Georgia,serif;
+  color:#3a2d24;
+  text-align:center;
+  margin:4px 48px 10px;
+}
+
+/* ---------- Telegram ---------- */
+.telegram-form{
+  position:relative;
+  width:min(700px,92%);
+  margin:0 auto;
+  background:
+    linear-gradient(180deg,rgba(90,50,20,.05),transparent 30%),
+    repeating-linear-gradient(0deg,rgba(90,60,20,.03) 0 2px,transparent 2px 4px),
+    #f3e2b0;
+  border:2px solid #6b4a22;
+  box-shadow:0 12px 28px rgba(60,35,15,.28), inset 0 0 0 6px #efe0b8;
+  padding:14px 16px 18px;
+  color:#2a2118;
+}
+.telegram-form .recon-stamp{
+  position:absolute;right:14px;top:12px;
+  border:3px solid #a3281f;color:#a3281f;
+  font:700 11px/1.15 "Courier Prime",monospace;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:6px 8px;transform:rotate(8deg);
+  background:#fff8e8cc;border-radius:2px;
+}
+.tg-head{
+  text-align:center;border-bottom:2px solid #6b4a22;padding:2px 80px 8px 8px;margin:0 0 8px;
+}
+.tg-dept{font:700 10px/1.2 "Libre Baskerville",serif;letter-spacing:.16em;text-transform:uppercase;margin:0}
+.tg-pmg{font:700 11px/1.3 "Libre Baskerville",serif;letter-spacing:.08em;margin:2px 0 0}
+.tg-word{font:900 26px/1 "Playfair Display",serif;letter-spacing:.28em;margin:2px 0 0}
+.tg-meta{
+  display:flex;justify-content:space-between;gap:10px;
+  font:12px/1.3 "Courier Prime",monospace;
+  margin:0 0 8px;padding:0 4px;
+}
+.tg-to{
+  font:700 13px/1.35 "Courier Prime",monospace;
+  margin:0 0 10px;padding:6px 8px;
+  border:1px solid #8a6a3a;background:#f7e9bf;
+}
+.tg-to .k{font-size:10px;letter-spacing:.1em;display:block;margin-bottom:2px}
+.tape{
+  background:
+    linear-gradient(90deg,rgba(80,50,20,.08),transparent 8px),
+    #fbf7ec;
+  border:none;
+  border-top:1px solid #d7c7a2;
+  border-bottom:1px solid #d7c7a2;
+  box-shadow:1px 2px 3px rgba(80,50,20,.18);
+  font:700 15px/1.5 "Courier Prime",monospace;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  padding:5px 12px 5px 14px;
+  margin:0 10px 9px 4px;
+  transform:rotate(-0.7deg);
+  white-space:pre-wrap;
+}
+.tape + .tape{transform:rotate(.55deg);margin-left:14px;margin-right:4px}
+.tg-sign{font:700 12px/1.3 "Courier Prime",monospace;text-transform:uppercase;margin:10px 4px 0;letter-spacing:.06em}
+.tg-note{font:italic 11px/1.4 "Libre Baskerville",serif;color:#5c4a38;margin:12px 6px 0}
+
+/* ---------- Photo print ---------- */
+.photo-stage{display:flex;gap:22px;justify-content:center;align-items:flex-start;padding:10px 24px 0}
+.print{
+  background:#f7f1e3;
+  padding:14px 14px 42px;
+  box-shadow:0 14px 28px rgba(50,30,10,.32), 0 0 0 1px rgba(80,50,20,.2);
+  transform:rotate(-1.8deg);
+  width:430px;
+  position:relative;
+}
+.print.back{transform:rotate(2.2deg);width:400px;min-height:500px;padding:20px 20px 24px;background:#efe4c8}
+.print::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 48%,transparent 56%),
+    linear-gradient(0deg,rgba(80,50,20,.08),transparent 30%);
+}
+.crease{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(125deg,transparent 46%,rgba(40,25,10,.18) 50%,transparent 54%),
+    linear-gradient(70deg,transparent 62%,rgba(40,25,10,.12) 66%,transparent 70%);
+  mix-blend-mode:multiply;
+}
+.print img{display:block;width:100%;height:auto;filter:contrast(1.05) sepia(.12) saturate(.9)}
+.print .verso{
+  font:400 17px/1.45 Kalam,cursive;
+  color:#2a2118;
+  margin:0;
+}
+.print .verso .acc{margin-top:1.1em;font-size:15px}
+.photo-cap{font:italic 12px/1.4 "Libre Baskerville",serif;color:#4a3a2c;text-align:center;margin:8px 40px 0}
+
+/* ---------- Radio script ---------- */
+.script{
+  width:min(640px,88%);
+  margin:0 auto;
+  background:#f4edd8;
+  border:1px solid #c4a36a;
+  box-shadow:0 8px 22px rgba(60,35,15,.22), inset 0 0 0 1px #fff8e6;
+  padding:16px 22px 18px;
+  position:relative;
+}
+.script .recon-stamp{
+  position:absolute;right:16px;top:14px;
+  border:3px solid #a3281f;color:#a3281f;
+  font:700 10px/1.15 "Courier Prime",monospace;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:5px 7px;transform:rotate(7deg);
+  background:#fff8e8cc;
+}
+.script .org{font:700 11px/1.2 "Courier Prime",monospace;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.script h2{font:700 20px/1.15 "Special Elite",cursive;margin:4px 0 2px;letter-spacing:.04em}
+.script .when{font:700 12px/1.3 "Courier Prime",monospace;margin:0 0 8px}
+.on-air{
+  display:inline-block;background:#7a1f18;color:#f7f0e3;
+  font:700 11px/1 "Courier Prime",monospace;letter-spacing:.16em;
+  padding:4px 8px;margin:0 0 10px;
+}
+.script p{font:400 15.5px/1.55 "Courier Prime",monospace;margin:0 0 .7em}
+.script .end{font:700 12px/1 "Courier Prime",monospace;letter-spacing:.14em;margin:8px 0 0}
+.script .src{font:italic 11px/1.4 "Libre Baskerville",serif;color:#5c4a38;margin:12px 0 0;padding-right:90px}
+
+/* ---------- Newspaper clipping ---------- */
+.clip{
+  width:min(680px,90%);
+  margin:12px auto 0;
+  background:#f6ecd4;
+  border:1px solid #c9b58a;
+  box-shadow:0 8px 20px rgba(60,35,15,.22);
+  padding:12px 16px 14px;
+  position:relative;
+  transform:rotate(-0.4deg);
+}
+.clip::before{
+  content:"";position:absolute;inset:-4px -6px auto auto;width:40px;height:18px;
+  background:rgba(255,250,230,.55);transform:rotate(8deg);
+  box-shadow:0 1px 0 rgba(80,50,20,.12);
+}
+.clip .mast{
+  font:900 17px/1.05 "Playfair Display",serif;
+  letter-spacing:.06em;text-align:center;text-transform:uppercase;
+  border-bottom:3px solid #2b221c;margin:0 0 4px;padding:0 0 4px;
+}
+.clip .date{font:700 10px/1.3 "Libre Baskerville",serif;letter-spacing:.08em;text-align:center;text-transform:uppercase;margin:0 0 8px}
+.clip h3{font:700 22px/1.15 "Playfair Display",serif;margin:0 0 8px;text-align:center}
+.clip p{font:400 13.5px/1.45 "Libre Baskerville",serif;margin:0 0 .55em;text-align:justify;hyphens:auto}
+.clip .src{font:italic 11px/1.4 "Libre Baskerville",serif;color:#5c4a38;margin:8px 0 0;text-align:left}
+.clip .recon{font:italic 11px/1.4 "Libre Baskerville",serif;color:#8b3a1e;margin:4px 0 0}
+
+@media print{
+  .telegram-form,.print,.script,.clip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

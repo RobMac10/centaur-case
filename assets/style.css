@@ -270,3 +270,49 @@ body.lightbox-open{overflow:hidden}
 .notebook.typed .close-line{font-family:"TypedNote",Georgia,serif;font-size:1.45rem}
 html{max-width:100%}
 img{max-width:100%;height:auto}
+
+/* Exhibits on The Page */
+.exhibits{margin:2.2rem 0 1.4rem}
+.exhibits > h3{font-size:1.45rem;margin:0 0 .4em}
+.exhibits .lead-ex{font-size:1.02rem;margin:0 0 1.2em}
+.exhibit{
+  margin:0 0 1.6rem;
+  background:#f7f1e4;
+  border:1px solid #d6c5ae;
+  border-radius:10px;
+  padding:1rem 1rem 1.1rem;
+}
+.exhibit h4{margin:.1em 0 .35em;color:#8b3a1e;font-size:1.15rem;border:0;padding:0}
+.exhibit .recon-flag{font:700 .85rem/1.4 system-ui,sans-serif;color:#8b3a1e;margin:0 0 .6em}
+body:not(.book-page) .telegram-form,
+body:not(.book-page) .script,
+body:not(.book-page) .clip,
+body:not(.book-page) .photo-stage{width:100%;margin:0 auto;height:auto}
+body:not(.book-page) .photo-stage{padding:0;flex-wrap:wrap}
+body:not(.book-page) .print,
+body:not(.book-page) .print.back{width:min(100%,320px)}
+.artefact-zoom{
+  display:block;width:100%;margin:0;padding:0;border:0;background:none;
+  cursor:zoom-in;text-align:left;color:inherit;font:inherit;
+}
+.artefact-zoom:focus-visible{outline:3px solid #235e69;outline-offset:3px}
+.radio-player{margin:.8rem 0 0;padding:.8rem .9rem;background:#efe2c4;border-radius:8px}
+.radio-player figcaption{font:600 .92rem/1.4 system-ui,sans-serif;color:#4a2e1b;margin:0 0 .5em}
+.radio-player audio{width:100%;margin:0 0 .5em}
+@media (max-width:520px){
+  body:not(.book-page) .telegram-form{padding:12px 10px 14px;box-shadow:0 8px 18px rgba(60,35,15,.22)}
+  body:not(.book-page) .tg-word{font-size:22px}
+  body:not(.book-page) .tg-head{padding-right:88px}
+  body:not(.book-page) .tape{font-size:13px;padding:5px 8px}
+  body:not(.book-page) .script{padding:14px 14px 16px}
+  body:not(.book-page) .script .recon-stamp{right:8px;top:8px;font-size:8px;padding:3px 5px}
+  body:not(.book-page) .script h2,
+  body:not(.book-page) .script .org,
+  body:not(.book-page) .script .when{padding-right:96px}
+  body:not(.book-page) .script h2{font-size:18px;line-height:1.2}
+  body:not(.book-page) .script p{font-size:14px}
+  body:not(.book-page) .clip h3{font-size:1.25rem}
+  body:not(.book-page) .print{transform:none;margin:0 auto .8rem}
+  body:not(.book-page) .print.back{transform:none}
+  .lightbox-stage img{max-width:94vw;max-height:90vh;object-fit:contain}
+}
