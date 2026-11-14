@@ -185,3 +185,31 @@ body.book-page{
 @media print{
   .telegram-form,.print,.script,.clip{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+
+/* Present-day journalist lines — not part of the 1943 artefacts */
+.journalist{
+  font:italic 400 16.5px/1.45 "Libre Baskerville",Georgia,serif;
+  color:#3a2d24;
+  text-align:center;
+  margin:18px auto 0;
+  max-width:620px;
+  padding:0 28px;
+}
+.journalist + .journalist{margin-top:10px}
+.journalist .turn{display:block;margin-top:8px;font-style:italic;color:#5a4638;font-size:15px}
+.decision{
+  font:italic 400 17.5px/1.4 "Libre Baskerville",Georgia,serif;
+  color:#2b221c;
+  text-align:center;
+  margin:14px auto 0;
+  max-width:620px;
+  padding:0 28px;
+}
+.case-q{
+  font:600 16.5px/1.35 "Libre Baskerville",Georgia,serif;
+  color:#2b221c;
+  text-align:center;
+  margin:12px auto 0;
+  max-width:640px;
+  padding:0 24px;
+}

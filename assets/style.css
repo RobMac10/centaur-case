@@ -316,3 +316,43 @@ body:not(.book-page) .print.back{width:min(100%,320px)}
   body:not(.book-page) .print.back{transform:none}
   .lightbox-stage img{max-width:94vw;max-height:90vh;object-fit:contain}
 }
+
+/* Journalist beats woven between exhibits */
+.desk-beat{
+  font-family:"TypedNote",Georgia,serif;
+  font-size:1.22rem;
+  line-height:1.6;
+  font-style:italic;
+  color:#3a2d24;
+  margin:0.2rem 0.4rem 0.9rem;
+  text-align:center;
+}
+.desk-turn{
+  font-family:"TypedNote",Georgia,serif;
+  font-size:1.08rem;
+  line-height:1.5;
+  font-style:italic;
+  color:#5a4638;
+  margin:-0.4rem 0.4rem 1.4rem;
+  text-align:center;
+}
+.decision-box{margin:0.6rem 0 1.2rem}
+.decision-box .case-q{
+  font-family:"TypedNote",Georgia,serif;
+  font-size:1.22rem;
+  line-height:1.45;
+  font-weight:700;
+  font-style:normal;
+  text-align:center;
+  margin:0.2em 0 0.4em;
+  color:#2b221c;
+}
+body.easy-read .desk-beat,
+body.easy-read .desk-turn,
+body.easy-read .decision-box .case-q,
+body.easy-read .decision-box .close-line{font-family:"EasyRead",Georgia,sans-serif}
+@media (max-width:520px){
+  .desk-beat{font-size:1.12rem;text-align:left;margin-left:0;margin-right:0}
+  .desk-turn{font-size:1.02rem;text-align:left;margin-left:0;margin-right:0}
+  .decision-box .case-q{font-size:1.12rem}
+}
